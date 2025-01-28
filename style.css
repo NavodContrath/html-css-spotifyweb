@@ -3,7 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     border: 1px dotted red;
+    font-family: "Montserrat", serif;
 
+}
+
+body {
+    width: 100%;
+    max-width: 480px;
 }
 
 a {
@@ -95,6 +101,27 @@ a {
 
         span {
             display: none;
+        }
+    }
+}
+
+#catalouge {
+    font-size: 14px;
+    overflow-y: auto;
+
+    #upgrade {
+        text-align: end;
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+        #upgrade-btn {
+
+
+            a {
+                color: var(--spot-title);
+                border: 1px solid white;
+                padding: 5px
+            }
         }
     }
 }
