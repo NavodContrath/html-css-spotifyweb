@@ -10,18 +10,35 @@
 </head>
 
 <body class="debug">
-    <main>
+    <main class="d-flex">
         <div id="side-bar">
-            <div id="logo"><a href=""><img src="img/logo.svg" alt="" width="150px"> <img src="img/logo-small.svg "
-                        alt="" width="25px"></a>
+            <div id="logo">
+                <a href="">
+                    <img src="img/logo.svg" alt="" id="logo-lg" class="d-none">
+                    <img src="img/logo-small.svg " alt="" id="logo-sm">
+                </a>
             </div>
             <ul id="tools" class="l-none">
-                <li><a href="" class="hover-white-B"><img src="img/home.svg" alt="" width="25px">Home</a></li>
-                <li><a href="" class="hover-white-B"><img src="img/search.svg" alt="" width="25px"></i>Cerca</a></li>
-                <li><a href="" class="hover-white-B"><img src="img/libreria.svg" alt="" width="25px">la tua libreria</a>
+                <li>
+                    <a href="" class="hover-white-B">
+                        <img src="img/home.svg" alt="">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="hover-white-B">
+                        <img src="img/search.svg" alt="">
+                        <span>Cerca</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="hover-white-B">
+                        <img src="img/libreria.svg" alt="">
+                        <span>La tua libreria</span>
+                    </a>
                 </li>
             </ul>
-            <div id="playlist">
+            <div id="playlist" class="d-none">
                 <h4>PLAYLIST</h4>
                 <div id="create-btn">
                     <a href=""><i class="fa-solid fa-plus"></i>
@@ -36,16 +53,22 @@
                     <li><a href="" class="hover-white-B">Nuova playlist</a></li>
                     <li><a href="" class="hover-white-B">Nuova playlist</a></li>
                 </ul>
-                <div id="install-btn"><a href="" class="hover-white-B"><img src="img/download.svg" alt=""
-                            width="20px">Installa app</a></div>
-                <div id="profile"><img src="img/profile.svg" alt="" width="25px">Navod Contrath</div>
             </div>
+            <div id="install-profile">
+                <a href="" class="hover-white-B">
+                    <img src="img/download.svg" alt="" width="20px"><span>Installa app</span>
+                </a>
 
-        </div>
-        <div id="upgrade">
-            <div id="upgrade-btn"><a href="" class="hover-white-B"></a></div>
+                <div id="profile">
+                    <img src="img/profile.svg" alt="" width="25px" height="25px"><span>Navod
+                        Contrath</span>
+                </div>
+            </div>
         </div>
         <div id="catalouge">
+            <div id="upgrade">
+                <div id="upgrade-btn"><a href="" class="hover-white-B"></a></div>
+            </div>
             <div class="row">
                 <div class="col-12">
                     <ul class="d-flex l-none">

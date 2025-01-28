@@ -31,6 +31,10 @@ a {
     display: flex;
 }
 
+.d-none {
+    display: none;
+}
+
 .l-none {
     list-style: none;
 }
@@ -63,3 +67,34 @@ a {
 }
 
 /* STYLE REGION */
+#side-bar {
+    width: 50px;
+    text-align: center;
+
+    img {
+        max-width: 100%;
+    }
+
+    ul {
+        margin-bottom: 20rem;
+
+        span {
+            display: none;
+        }
+    }
+
+    #install-profile {
+        a {
+            margin-bottom: 1rem;
+        }
+
+        #profile img {
+            background-color: gray;
+            border-radius: 50%;
+        }
+
+        span {
+            display: none;
+        }
+    }
+}
