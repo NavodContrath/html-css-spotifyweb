@@ -1,7 +1,7 @@
 map:
 
 MOBILE FIRST
--give the structure of the page on penpot
+-give the structure of the page on penpot (done)
 -traslate the structure given on pen pot to html and css (block structure)
 -color, fonts and styles research
 -work on the main: 1. side-bar

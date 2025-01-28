@@ -2,4 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px dotted red;
+
 }
+
+a {
+    text-decoration: none;
+    color: #77797e;
+}
+
+:root {
+    --spot-title: white;
+    --spot-sub-title: #77797e;
+    --spot-side-bg: black;
+    --spot-upgrade-bg: #080b12;
+    --spot-catalouge-bg: #141922;
+    --spot-rule: #adff2f;
+}
+
+/* DEBUG REGION */
+.debug {
+    background-color: black;
+    color: #77797e;
+}
+
+/* UTILITIES REGION */
+.d-flex {
+    display: flex;
+}
+
+.l-none {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: auto;
+    flex-basis: auto;
+    margin: 0;
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col-12 {
+    width: calc(100% / 12 * 12);
+}
+
+/* STYLE REGION */
