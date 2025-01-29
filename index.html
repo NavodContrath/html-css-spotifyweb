@@ -147,20 +147,42 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div id="song">
-            <div class="d-flex">
-                <img src="img/sinister.jpeg" alt="" width="80px">
-                <ul class="l-none">
-                    <li><b>Sinister</b></li>
-                    <li>Brano Nome</li>
+    <footer class="d-flex">
+        <div id="song" class="d-flex">
+            <img src="img/sinister.jpeg" alt="" width="80px">
+            <ul class="l-none">
+                <li><b>Sinister</b></li>
+                <li>Brano Nome</li>
+            </ul>
+            <div>
+                <div><i class="fa-regular fa-heart"></i></div>
+                <i class="fa-solid fa-folder"></i>
+            </div>
+        </div>
+        <div id="player" class="d-flex">
+            <ul class="d-flex l-none">
+                <li><i class="fa-solid fa-shuffle"></i></li>
+                <li><i class="fa-solid fa-backward-step"></i></li>
+                <li><i class="fa-regular fa-circle-play"></i></li>
+                <li><i class="fa-solid fa-forward-step"></i></li>
+                <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
+            </ul>
+            <div>
+                <ul id="player-bar" class="d-flex l-none">
+                    <li>0:25</li>
+                    <li id="player-rule"></li>
+                    <li>0:43</li>
                 </ul>
             </div>
         </div>
-        <div id="player">
-
+        <div id="volume" class="d-flex">
+            <ul class="d-flex l-none">
+                <li><i class="fa-solid fa-list"></i></li>
+                <li><i class="fa-solid fa-desktop"></i></li>
+                <li><i class="fa-solid fa-volume-high"></i></i></li>
+            </ul>
+            <span id="volume-rule"></span>
         </div>
-        <div id="volume"></div>
     </footer>
 </body>
 

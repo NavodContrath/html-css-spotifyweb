@@ -16,6 +16,7 @@ main {
 footer {
     height: 90px;
     background-color: #282828;
+    padding: 5px;
 }
 
 :root {
@@ -126,21 +127,67 @@ footer {
 }
 
 footer {
+    padding: 0.5rem;
+
     #song {
-        width: 20%;
-        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        width: 25%;
 
         img {
-            width: 50%;
-            margin: auto;
+            width: 30%;
+            margin-right: 5px;
+
+        }
+
+        ul,
+        i {
+            margin-right: 5px;
+            color: white;
+
         }
     }
 
     #player {
-        width: 60%;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: white;
+            font-size: 25px;
+        }
+
+        #player-bar {
+            li {
+                font-size: 10px;
+            }
+
+            #player-rule {
+                width: 130px;
+                border: 5px solid grey;
+                border-radius: 30px;
+                background-color: grey;
+            }
+        }
     }
 
     #volume {
-        width: 20%;
+        align-items: center;
+
+        ul {
+            gap: 1rem;
+        }
+
+        span {
+            margin-left: 1rem;
+            border: 5px gray solid;
+            width: 85px;
+            border-radius: 30px;
+        }
     }
+
 }
