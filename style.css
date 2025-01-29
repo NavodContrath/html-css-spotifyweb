@@ -17,6 +17,7 @@ footer {
     height: 90px;
     background-color: #282828;
     padding: 5px;
+    color: white;
 }
 
 :root {
@@ -56,6 +57,26 @@ footer {
     display: none;
 }
 
+.sub-title {
+    color: var(--spot-sub-title);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.radius-img {
+    border-radius: 50%;
+}
+
+.rule-index {
+    width: 45%;
+    background-color: lightgrey;
+    color: lightgrey;
+    padding: 0;
+    margin: 0;
+    border-radius: 30px;
+    height: 3px;
+}
+
 
 
 
@@ -77,6 +98,13 @@ footer {
         display: none;
     }
 
+    #profile {
+        img {
+            background-color: #77797e;
+            border-radius: 50%;
+        }
+    }
+
 }
 
 #catalouge {
@@ -92,8 +120,13 @@ footer {
     }
 
     h2,
-    h3 {
+    h5 {
         padding-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        margin-bottom: 1rem;
     }
 
 
@@ -128,22 +161,22 @@ footer {
 
 footer {
     padding: 0.5rem;
+    font-size: 10px;
 
     #song {
         align-items: center;
         font-size: 14px;
         width: 25%;
+        margin: auto;
 
         img {
             width: 30%;
             margin-right: 5px;
-
         }
 
-        ul,
         i {
-            margin-right: 5px;
-            color: white;
+
+            color: #77797e;
 
         }
     }
@@ -153,6 +186,8 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: auto;
+
 
         ul {
             gap: 1rem;
@@ -168,25 +203,33 @@ footer {
 
             #player-rule {
                 width: 130px;
-                border: 5px solid grey;
                 border-radius: 30px;
-                background-color: grey;
+                margin: 0 1rem;
+                background-color: #77797e;
+                height: 3px;
             }
         }
     }
 
     #volume {
+        margin: auto;
         align-items: center;
 
         ul {
             gap: 1rem;
+
+            li {
+                color: white;
+            }
         }
 
-        span {
+        #volume-rule {
             margin-left: 1rem;
-            border: 5px gray solid;
             width: 85px;
+            height: 3px;
             border-radius: 30px;
+            background-color: #77797e;
+
         }
     }
 
