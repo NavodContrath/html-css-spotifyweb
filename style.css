@@ -11,11 +11,7 @@ main {
     background-color: var(--spot-catalouge-bg);
     color: white;
     display: flex;
-
-
-
-
-
+    overflow-y: auto;
 }
 
 footer {
@@ -163,7 +159,7 @@ a {
 
     h2,
     h5 {
-        padding-left: 1rem;
+        padding-left: 1.7rem;
         margin-bottom: 1rem;
     }
 
@@ -190,6 +186,7 @@ a {
 }
 
 .albums {
+    padding: 1rem;
 
     .col-6 {
         margin-bottom: 2rem;
@@ -207,11 +204,17 @@ footer {
 
     #song {
         align-items: center;
+        justify-content: flex-start;
         margin: auto;
 
         img {
-            width: 30%;
+            width: 25%;
             margin-right: 1rem;
+        }
+
+        li:last-child {
+            color: #77797e;
+
         }
 
         i {
@@ -259,6 +262,7 @@ footer {
 
     #volume {
         align-items: center;
+        justify-content: end;
 
         ul {
             gap: 1rem;
@@ -270,7 +274,7 @@ footer {
 
         #volume-rule {
             margin-left: 1rem;
-            width: 85px;
+            width: 100px;
             height: 3px;
             border-radius: 30px;
             background-color: #77797e;
@@ -359,24 +363,43 @@ footer {
 
         h2,
         h5 {
-            padding-left: 1rem;
+            padding-left: 1.7rem;
             margin-bottom: 1rem;
+
         }
 
         h4 {
             margin-bottom: 1rem;
         }
-
-
     }
 }
 
 @media screen and (min-width:720px) {
     .col-md-3 {
         width: calc(100% / 12 * 3);
+
     }
 
     .d-md-flex {
         display: flex;
+    }
+
+    #catalouge {
+
+        h2,
+        h5 {
+            padding-left: 1.5rem;
+        }
+    }
+}
+
+@media screen and (min-width:976px) {
+
+    .col-lg-2 {
+        width: calc(100% / 12 * 2);
+    }
+
+    footer {
+        padding: 1rem;
     }
 }
