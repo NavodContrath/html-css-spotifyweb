@@ -1,20 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    border: 1px dotted red;
+    boder: 1px dotted red;
     font-family: "Montserrat", serif;
+}
+
+main {
+    height: calc(100vh - 90px);
+    background-color: var(--spot-catalouge-bg);
+    color: white;
+    display: flex;
 
 }
 
-body {
-    width: 100%;
-    max-width: 480px;
-}
-
-a {
-    text-decoration: none;
-    color: #77797e;
+footer {
+    height: 90px;
+    background-color: #282828;
 }
 
 :root {
@@ -26,26 +27,11 @@ a {
     --spot-rule: #adff2f;
 }
 
-/* DEBUG REGION */
-.debug {
-    background-color: black;
-    color: #77797e;
-}
-
-/* UTILITIES REGION */
 .d-flex {
     display: flex;
 }
 
-.d-none {
-    display: none;
-}
-
-.l-none {
-    list-style: none;
-}
-
-.row {
+.albums {
     display: flex;
     flex-wrap: wrap;
 }
@@ -53,75 +39,108 @@ a {
 .col {
     width: auto;
     flex-basis: auto;
-    margin: 0;
-}
 
-.col-2 {
-    width: calc(100% / 12 * 2);
 }
 
 .col-6 {
     width: calc(100% / 12 * 6);
+    text-align: center;
 }
 
-.col-8 {
-    width: calc(100% / 12 * 8);
+.l-none {
+    list-style: none;
 }
 
-.col-12 {
-    width: calc(100% / 12 * 12);
+.d-none {
+    display: none;
 }
 
-/* STYLE REGION */
+
+
+
 #side-bar {
     width: 50px;
+    background-color: var(--spot-side-bg);
     text-align: center;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 
     img {
-        max-width: 100%;
+        max-width: 70%;
     }
 
-    ul {
-        margin-bottom: 20rem;
-
-        span {
-            display: none;
-        }
+    span {
+        display: none;
     }
 
-    #install-profile {
-        a {
-            margin-bottom: 1rem;
-        }
-
-        #profile img {
-            background-color: gray;
-            border-radius: 50%;
-        }
-
-        span {
-            display: none;
-        }
-    }
 }
 
 #catalouge {
-    font-size: 14px;
+    width: calc(100% - 50px);
     overflow-y: auto;
 
-    #upgrade {
-        text-align: end;
-        padding: 1rem;
+
+    ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem;
+    }
+
+    h2,
+    h3 {
+        padding-left: 1rem;
+    }
+
+
+}
+
+#upgrade {
+    padding: 2rem;
+    background-color: var(--spot-upgrade-bg);
+    text-align: end;
+
+    a {
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 2rem;
+        border: 1px solid white;
+        border-radius: 30px;
+    }
+}
+
+.albums {
+
+    .col-6 {
+        margin-bottom: 2rem;
+    }
+
+    img {
+        max-width: 90%;
         margin-bottom: 1rem;
+    }
+}
 
-        #upgrade-btn {
+footer {
+    #song {
+        width: 20%;
+        text-align: center;
 
-
-            a {
-                color: var(--spot-title);
-                border: 1px solid white;
-                padding: 5px
-            }
+        img {
+            width: 50%;
+            margin: auto;
         }
+    }
+
+    #player {
+        width: 60%;
+    }
+
+    #volume {
+        width: 20%;
     }
 }
