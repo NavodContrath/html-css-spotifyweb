@@ -20,6 +20,11 @@ footer {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: var(--spot-sub-title);
+}
+
 :root {
     --spot-title: white;
     --spot-sub-title: #77797e;
@@ -90,8 +95,32 @@ footer {
     justify-content: space-between;
 
 
+    #logo-lg {
+        display: none;
+    }
+
     img {
         max-width: 70%;
+    }
+
+    #playlist {
+        display: none;
+
+        h4 {
+            margin-bottom: 1rem;
+        }
+
+        i {
+            padding: 0.5rem;
+            color: #080b12;
+            background-color: #77797e;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-bottom: 10rem;
+        }
+
     }
 
     span {
@@ -185,13 +214,12 @@ footer {
         width: 50%;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         margin: auto;
 
 
         ul {
             gap: 1rem;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             color: white;
             font-size: 25px;
         }
@@ -233,4 +261,70 @@ footer {
         }
     }
 
+}
+
+@media screen and (min-width:576px) {
+    #side-bar {
+        width: 230px;
+        background-color: var(--spot-side-bg);
+        text-align: start;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: auto;
+
+
+        #logo-lg {
+            display: block;
+            max-width: 80%;
+            margin-bottom: 2rem;
+        }
+
+        img {
+            max-width: 15%;
+        }
+
+        #logo-sm {
+            display: none;
+        }
+
+        li>a {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+
+            img {
+                margin-right: 1rem;
+            }
+        }
+
+
+        #playlist {
+            display: block;
+
+        }
+
+        span {
+            display: block;
+        }
+
+        #side-bot {
+
+            a,
+            div {
+                display: flex;
+
+                img {
+                    margin-right: 1rem;
+                }
+            }
+
+            #profile {
+                margin-top: 1rem;
+            }
+        }
+
+    }
 }
