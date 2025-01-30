@@ -86,21 +86,47 @@ a {
     margin: 0;
     border-radius: 30px;
     height: 3px;
+
+    &:hover {
+        background-color: #adff2f;
+    }
 }
 
+.fade-card {
+    position: relative;
 
+}
+
+.fade-icon {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none !important;
+}
+
+.fade-card:hover .fade-icon {
+    display: block !important;
+}
+
+.hover-white-B:hover {
+
+    color: white;
+}
 
 
 #side-bar {
     width: 50px;
     background-color: var(--spot-side-bg);
     text-align: center;
-    padding-top: 1rem;
     display: flex;
+    padding: 0.5rem;
     flex-direction: column;
     justify-content: space-between;
     overflow-y: auto;
     font-size: 14px;
+
 
     #logo-lg {
         display: none;
@@ -108,6 +134,20 @@ a {
 
     img {
         max-width: 70%;
+        margin-bottom: 10px;
+
+    }
+
+    #side-top {
+        img {
+
+
+            &:hover {
+                max-width: 30px;
+                margin-left: -1rem;
+                border-left: 3px solid #adff2f;
+            }
+        }
     }
 
     #playlist {
@@ -124,6 +164,10 @@ a {
             color: #080b12;
             background-color: #77797e;
             margin-bottom: 1rem;
+
+            &:hover {
+                background-color: white;
+            }
         }
 
         ul {
@@ -155,7 +199,15 @@ a {
         flex-wrap: wrap;
         justify-content: center;
         margin: 2rem;
+
+        li {
+            &:hover {
+                border-bottom: 3px solid #adff2f;
+            }
+        }
     }
+
+
 
     h2,
     h5 {
@@ -174,6 +226,10 @@ a {
     padding: 2rem;
     background-color: var(--spot-upgrade-bg);
     text-align: end;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 100;
 
     a {
         font-size: 12px;
@@ -182,6 +238,12 @@ a {
         padding: 0.5rem 2rem;
         border: 1px solid white;
         border-radius: 30px;
+
+        &:hover {
+            font-size: 15px;
+            padding: 0.5rem 2.5rem;
+            border: 3px solid white;
+        }
     }
 }
 
@@ -196,11 +258,13 @@ a {
         max-width: 90%;
         margin-bottom: 1rem;
     }
+
 }
 
 footer {
     padding: 1rem;
     font-size: 10px;
+
 
     #song {
         align-items: center;
@@ -215,12 +279,21 @@ footer {
         li:last-child {
             color: #77797e;
 
+            &:hover {
+                color: white;
+                text-decoration: underline;
+            }
+
         }
 
         i {
             margin-left: 1rem;
             font-size: 14px;
             color: #77797e;
+
+            &:hover {
+                color: white;
+            }
 
         }
     }
@@ -238,8 +311,18 @@ footer {
             font-size: 25px;
             align-items: center;
 
+            li {
+                &:hover {
+                    font-size: 26px;
+                }
+            }
+
             .i-10 {
                 font-size: 15px;
+
+                &:hover {
+                    font-size: 16px;
+                }
             }
 
         }
@@ -284,14 +367,41 @@ footer {
 
 }
 
+@media screen and (min-width:320px) {
+
+    #song {
+        display: none;
+    }
+
+    #volume {
+        display: none;
+    }
+}
+
+@media screen and (min-width:444px) {
+    #song {
+        display: flex;
+    }
+
+    #volume {
+        display: flex;
+    }
+}
+
 @media screen and (min-width:576px) {
     #side-bar {
         width: 200px;
         background-color: var(--spot-side-bg);
         text-align: start;
-        padding: 1rem;
         display: flex;
+        padding: 0;
         flex-direction: column;
+
+        #side-top,
+        #side-bot {
+            padding: 1rem
+        }
+
 
 
 
@@ -382,6 +492,7 @@ footer {
 
     .d-md-flex {
         display: flex;
+
     }
 
     #catalouge {
